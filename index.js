@@ -1,14 +1,11 @@
 $(function () {
     // 送信
     $('form').submit(function () {
-        var names = = $('input[name="name"]').val();
-        var university = $('input[name="university"]').val();
-        var grade = $('input[name="grade"]').val();
-        var industry = $('input[name="industry"]').val();
         var company = $('input[name="company"]').val();
+        var text_len = $('input[name="text_len"]').val();
         var content = $('textarea[name="content"]').val();
 
-        var msg = `名前：${names}\n大学：${university}\n学年：${grade}\n志望業界：${industry}\n志望企業：${company}\n相談内容：${content}`;
+        var msg = `提出先企業：${company}\n文字数：${text_len}\nES内容：${content}`;
         sendText(msg);
 
         return false;
