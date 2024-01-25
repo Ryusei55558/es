@@ -5,7 +5,7 @@ $(function () {
         var text_len = $('input[name="text_len"]').val();
         var content = $('textarea[name="content"]').val();
 
-        var msg = `提出先企業：${company}\n文字数：${text_len}\nES内容：${content}`;
+        var msg = `【AI ES添削】\n提出先企業：${company}\n文字数：${text_len}\nES内容：${content}`;
         sendText(msg);
 
         return false;
